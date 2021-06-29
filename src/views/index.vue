@@ -3,7 +3,7 @@
    <el-row>
      <el-col :span="3">
        <el-menu
-         default-active="2"
+         :default-active="'/'"
          class="el-menu-vertical-demo"
          @select="handleSelect"
          :router="true">
@@ -37,16 +37,24 @@ export default {
       title:'',
       menu: [
         {
-          path:'/nested-css-rules',
-          name:'嵌套CSS 规则'
+          path:'/',
+          name:'混入',
         },
         {
-          path:'/import-file',
-          name:'导入sass文件'
+          path:'/custom-instruction',
+          name:'自定义指令'
         },
         {
-          path:'/mixer',
-          name:'混合器'
+          path:'/render-function',
+          name:'渲染函数&JSX'
+        },
+        {
+          path:'/plug-in-unit',
+          name:'插件'
+        },
+        {
+          path:'/filter',
+          name:'过滤器'
         }
       ]
     }

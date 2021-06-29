@@ -11,16 +11,24 @@ const routes = [
     component: Home,
     children: [
       {
-        path:'/nested-css-rules',
-        component: ()=> import('../views/nested-css-rules')
+        path:'/',
+        component: ()=> import('../views/mixin')
       },
       {
-        path:'/import-file',
-        component: ()=> import('../views/import-file')
+        path:'/custom-instruction',
+        component: ()=> import('../views/custom-instruction')
       },
       {
-        path:'/mixer',
-        component: ()=> import('../views/mixer')
+        path:'/render-function',
+        component: ()=> import('../views/render-function')
+      },
+      {
+        path:'/plug-in-unit',
+        component: ()=> import('../views/plug-in-unit')
+      },
+      {
+        path:'/filter',
+        component: ()=> import('../views/filter')
       }
     ]
   },
