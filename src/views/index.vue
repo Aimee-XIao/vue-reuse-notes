@@ -105,6 +105,7 @@ export default {
   border-radius: 20px;
   padding: 20px 0 20px 20px;
   box-sizing: border-box;
+  border: none;
   .el-menu-item:focus, .el-menu-item:hover {
     background-color: transparent;
     color: $base-font-d-color;
