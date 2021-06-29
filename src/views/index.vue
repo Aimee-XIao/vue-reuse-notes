@@ -17,7 +17,7 @@
      <el-col :span="21">
        <div class="content">
          <el-breadcrumb separator-class="el-icon-arrow-right">
-           <el-breadcrumb-item>{{ title }} <span style="font-size: 12px;color: #66CCCC;margin-left: 20px;">Notes → STUDYNOTES.md</span></el-breadcrumb-item>
+           <el-breadcrumb-item>{{ title }} <span style="font-size: 12px;color: #66CCCC;margin-left: 20px;">Notes → {{ noteName }}</span></el-breadcrumb-item>
          </el-breadcrumb>
          <p class="line"></p>
          <div>
@@ -35,14 +35,17 @@ export default {
   data() {
     return {
       title:'',
+      noteName:'',
       menu: [
         {
           path:'/',
           name:'混入',
+          note:'MIXINNOTES.md'
         },
         {
           path:'/custom-instruction',
-          name:'自定义指令'
+          name:'自定义指令',
+          note:'CUSTOM.md'
         },
         {
           path:'/render-function',
@@ -61,12 +64,14 @@ export default {
   },
   mounted() {
     this.title = this.menu[0].name
+    this.noteName = this.menu[0].note
   },
   methods: {
     handleSelect(key, keyPath) {
       this.menu.forEach(item => {
         if(item.path == keyPath){
           this.title = item.name
+          this.noteName = item.note
         }
       })
       console.log(key, keyPath);
