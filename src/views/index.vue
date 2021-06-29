@@ -17,7 +17,7 @@
      <el-col :span="21">
        <div class="content">
          <el-breadcrumb separator-class="el-icon-arrow-right">
-           <el-breadcrumb-item>{{ title }}</el-breadcrumb-item>
+           <el-breadcrumb-item>{{ title }} <span style="font-size: 12px;color: #66CCCC;margin-left: 20px;">Notes → STUDYNOTES.md</span></el-breadcrumb-item>
          </el-breadcrumb>
          <p class="line"></p>
          <div>
