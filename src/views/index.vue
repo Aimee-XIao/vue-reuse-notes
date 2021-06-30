@@ -49,7 +49,8 @@ export default {
         },
         {
           path:'/render-function',
-          name:'渲染函数&JSX'
+          name:'渲染函数&JSX',
+          note:'RENDER.md'
         },
         {
           path:'/plug-in-unit',
