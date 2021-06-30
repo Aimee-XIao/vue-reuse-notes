@@ -20,7 +20,7 @@
            <el-breadcrumb-item>{{ title }} <span style="font-size: 12px;color: #66CCCC;margin-left: 20px;">Notes → {{ noteName }}</span></el-breadcrumb-item>
          </el-breadcrumb>
          <p class="line"></p>
-         <div>
+         <div class="content-box">
            <router-view />
          </div>
        </div>
@@ -90,18 +90,23 @@ export default {
   padding: 20px;
   box-sizing: border-box;
   .content {
+    height: 804px;
     margin-left: 4px;
     background-color: #ffffff54;
     border-radius: 20px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     padding: 15px;
     margin-top: 4px;
     overflow: hidden;
     div {
+
       margin-top: 20px;
+    }
+    .content-box {
+      overflow: auto;
+      width: 100%;
     }
     .line {
       width: 100%;
