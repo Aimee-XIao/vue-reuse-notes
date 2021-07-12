@@ -8,6 +8,7 @@ Toast.install = function (Vue) {
   // 同时这个子类也就是组件
   // extend创建的是Vue的构造器，需要通过$mount('')来挂载到指定的元素上
   const ToastConstructor = Vue.extend(ToastComponent)
+  console.log(ToastComponent)
   // 生成一个该子类的实例
   const instance = new ToastConstructor();
 
