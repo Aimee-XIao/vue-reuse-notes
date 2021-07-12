@@ -22,10 +22,15 @@
     <li>http://www.baidu.com</li>
   </ol>
   <a href="http://localhost:8081/#/render-function" target="_blank">sdfsdf</a>
+  <p>函数式组件</p>
+  <FunctionalButton @click="log">
+    Click me
+  </FunctionalButton>
 </div>
 </template>
 
 <script>
+import FunctionalButton from '../components/functioncomponent'
 export default {
   name: "mixer",
   data() {
@@ -33,10 +38,16 @@ export default {
       blogTitle:'学习笔记'
     }
   },
+  components:{
+    FunctionalButton
+  },
   mounted() {
     console.log(Number(null))
   },
   methods: {
+    log() {
+     alert('此按钮由函数式组件渲染')
+    },
     compoted(){
       console.log('---------')
     },

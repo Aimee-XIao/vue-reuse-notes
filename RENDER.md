@@ -216,6 +216,10 @@ render: function (createElement, context) {
 · parent：对父组件的引用
 · listeners：(2.3.0+) 一个包含了所有父组件为当前组件注册的事件监听器的对象。这是 data.on 的一个别名。
 · injections：(2.3.0+) 如果使用了 inject 选项，则该对象包含了应当被注入的 property。
+
+* 添加functional: true之后，需要我们更新我们的锚点标题组件的渲染函数，为其增加 content 参数，并将 this.$slots.default 更新为 context.children，然后将 this.level 更新为 context.props.level。
+
+
 ```
 
 

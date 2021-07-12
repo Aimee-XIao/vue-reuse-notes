@@ -29,6 +29,10 @@ const routes = [
       {
         path:'/filter',
         component: ()=> import('../views/filter')
+      },
+      {
+        path:'/api',
+        component: ()=> import('../views/API')
       }
     ]
   },

@@ -54,11 +54,18 @@ export default {
         },
         {
           path:'/plug-in-unit',
-          name:'插件'
+          name:'插件',
+          note:'PLUGINUNIT.md'
         },
         {
           path:'/filter',
-          name:'过滤器'
+          name:'过滤器',
+          note: 'FILTER.md'
+        },
+        {
+          path: '/api',
+          name:'api study',
+          note: 'API.md'
         }
       ]
     }
