@@ -7,6 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 import Toast from './components/plug/toast/index'
+import * as esriLoader from 'esri-loader'
 Vue.use(preview)
 Vue.use(Toast)
 Vue.config.productionTip = false;
@@ -46,6 +47,8 @@ Vue.component('anchored-heading', {
     }
   }
 })
+
+Vue.prototype.$esriLoader = esriLoader
 
 //创建一个按钮，可以使用自定义指令
 

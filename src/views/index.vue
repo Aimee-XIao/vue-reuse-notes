@@ -66,6 +66,11 @@ export default {
           path: '/api',
           name:'api study',
           note: 'API.md'
+        },
+        {
+          path: '/map',
+          name:'ArcGis study',
+          note: 'ArcGis.md'
         }
       ]
     }
@@ -108,10 +113,6 @@ export default {
     padding: 15px;
     margin-top: 4px;
     overflow: hidden;
-    div {
-
-      margin-top: 20px;
-    }
     .content-box {
       overflow: auto;
       width: 100%;

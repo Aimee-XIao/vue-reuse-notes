@@ -33,6 +33,10 @@ const routes = [
       {
         path:'/api',
         component: ()=> import('../views/API')
+      },
+      {
+        path:'/map',
+        component: ()=> import('../views/map')
       }
     ]
   },
