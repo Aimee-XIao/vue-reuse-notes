@@ -13,6 +13,9 @@
       <el-tab-pane label="加载本地地图-绘点">
         <Huidian></Huidian>
       </el-tab-pane>
+       <el-tab-pane label="加载本地地图-绘制区域">
+        <Areabox></Areabox>
+      </el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -23,12 +26,14 @@ import Biaodian from './maps/biaodian.vue'
 // 加载切片地图
 import Qiepian from './maps/renshubiaoshi.vue'
 import Huidian from './maps/addDot.vue'
+import Areabox from './maps/huiArea.vue'
 export default {
   components: {
     BaseMap,
     Biaodian,
     Qiepian,
-    Huidian
+    Huidian,
+    Areabox
   }
 };
 </script>
